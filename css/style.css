@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+
 * {
     box-sizing: border-box;
 }
@@ -6,7 +8,7 @@ body,
 html {
     margin: 0;
     min-height: 100vh;
-    font-family: arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #170035;
     color: white;
 }
@@ -14,7 +16,12 @@ html {
 a {
     text-decoration: none;
     color: white;
-    font-weight: bolder;
+    font-weight: light;
+    font-size: 20px;
+}
+
+a i {
+    vertical-align: top;
 }
 
 h1 {
@@ -24,16 +31,30 @@ h1 {
 }
 
 h2 {
-    text-align: center;
+    font-style: light;
+    margin-bottom: 5px;
+}
+
+.stats__desc__hr{
+    width: 270px;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 0;
+}
+
+p {
+    font-weight: 200;
+    font-size: 24px;
+}
+
+.text--green {
+    color: #05FF00;
 }
 
 .container {
-    padding-left: 600px;
-    padding-right: 600px;
-}
-
-.bold {
-    font-weight: 600;
+    max-width: 800px;  
+    margin-left: auto; 
+    margin-right: auto;
 }
 
 .center {
@@ -44,6 +65,34 @@ h2 {
     text-align: left;
 }
 
+.stats {
+    display: flex;
+}
+
+.stats__block {
+    flex-grow: 1;
+}
+
+.stats__movies__title {
+    display: inline-flex;
+}
+
+.stats__bigNumber {
+    font-size: 128px;
+    font-weight: bold;
+    margin-bottom: -20px;
+}
+
+.stats__desc {
+    font-size: 20px;
+}
+
+.text--bottom {
+    position: bottom;
+    padding-top: 50px;
+    padding-right: 30px;
+}
+
 .description {
     padding-left: 200px;
     padding-right: 200px;
@@ -51,6 +100,16 @@ h2 {
 
 .header {
     padding: 50px;
+}
+
+.timeline {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.stone {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
 .grow { 
