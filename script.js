@@ -1,23 +1,23 @@
-function timeInfo() {
-    document.getElementById("stoneName").innerHTML = "Time Stone"
+function timePage() {
+    location.href = "timeStone.html";
 }
 
-function soulInfo() {
-    document.getElementById("stoneName").innerHTML = "Soul Stone"
+function soulPage() {
+    location.href = "soulStone.html";
 }
 
-function mindInfo() {
-    document.getElementById("stoneName").innerHTML = "Mind Stone"
+function mindPage() {
+    location.href = "mindStone.html";
 }
 
-function realityInfo() {
-    document.getElementById("stoneName").innerHTML = "Reality Stone"
+function realityPage() {
+    location.href = "realityStone.html";
 }
 
-function spaceInfo() {
-    document.getElementById("stoneName").innerHTML = "Space Stone"
+function spacePage() {
+    location.href = "spaceStone.html";
 }
 
-function powerInfo() {
-    document.getElementById("stoneName").innerHTML = "Power Stone"
+function powerPage() {
+    location.href = "powerStone.html";
 }
