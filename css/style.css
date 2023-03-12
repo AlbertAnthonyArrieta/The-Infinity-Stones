@@ -13,17 +13,6 @@ html {
     color: white;
 }
 
-a {
-    text-decoration: none;
-    color: white;
-    font-weight: light;
-    font-size: 20px;
-}
-
-a i {
-    vertical-align: top;
-}
-
 h1 {
     text-align: center;
     font-size: 70px;
@@ -35,11 +24,15 @@ h2 {
     margin-bottom: 5px;
 }
 
-.stats__desc__hr{
-    width: 270px;
-    text-align: left;
-    margin-left: 0;
-    margin-top: 0;
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: light;
+    font-size: 20px;
+}
+
+a i {
+    vertical-align: top;
 }
 
 p {
@@ -50,6 +43,8 @@ p {
 .text--green {
     color: #05FF00;
 }
+
+/* Components */
 
 .container {
     max-width: 800px;  
@@ -65,8 +60,37 @@ p {
     text-align: left;
 }
 
+.text--bottom {
+    position: bottom;
+    padding-top: 50px;
+    padding-right: 30px;
+}
+
+.description {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.header {
+    padding: 50px;
+}
+
+.stone {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Stats */
+
 .stats {
     display: flex;
+}
+
+.stats__desc__hr{
+    width: 270px;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 0;
 }
 
 .stats__block {
@@ -87,31 +111,63 @@ p {
     font-size: 20px;
 }
 
-.text--bottom {
-    position: bottom;
-    padding-top: 50px;
-    padding-right: 30px;
-}
-
-.description {
-    padding-left: 200px;
-    padding-right: 200px;
-}
-
-.header {
-    padding: 50px;
-}
-
 .timeline {
     text-align: center;
     padding-top: 25px;
 }
 
-.stone {
-    margin-left: 50px;
-    margin-right: 50px;
+/* Timelines */
+#tsTime{
+    content: url("../imgs/TimeStoneTimeline.svg");
 }
 
+#spsTime{
+    content: url("../imgs/SpaceStoneTimeline.svg");
+}
+
+#psTime{
+    content: url("../imgs/PowerStoneTimeline.svg");
+}
+
+#rsTime{
+    content: url("../imgs/RealityStoneTimeline.svg");
+}
+
+#ssTime{
+    content: url("../imgs/SoulStoneTimeline.svg");
+}
+
+#msTime{
+    content: url("../imgs/MindStoneTimeline.svg");
+}
+
+@media screen and (max-width: 1260px) {
+    #tsTime{
+        content: url("../imgs/TimeStoneTimelineV.svg");
+    }
+
+    #spsTime{
+    content: url("../imgs/SpaceStoneTimelineV.svg");
+    }
+
+    #psTime{
+        content: url("../imgs/PowerStoneTimelineV.svg");
+    }
+
+    #rsTime{
+        content: url("../imgs/RealityStoneTimelineV.svg");
+    }
+
+    #ssTime{
+        content: url("../imgs/SoulStoneTimelineV.svg");
+    }
+
+    #msTime{
+        content: url("../imgs/MindStoneTimelineV.svg");
+    }
+}
+
+/* Animation */
 .grow { 
 transition: all .2s ease-in-out; 
 }
