@@ -1,23 +1,46 @@
+
+$(document).ready(function(){ 
+    homepage();
+});
+
+function homepage() {
+    $("#gauntletPage").show();
+    $("#tsPage").hide();
+    $("#psPage").hide();
+    $("#spsPage").hide();
+    $("#rsPage").hide();
+    $("#ssPage").hide();
+    $("#msPage").hide();
+}
 function timePage() {
-    location.href = "timeStone.html";
-}
-
-function soulPage() {
-    location.href = "soulStone.html";
-}
-
-function mindPage() {
-    location.href = "mindStone.html";
-}
-
-function realityPage() {
-    location.href = "realityStone.html";
-}
-
-function spacePage() {
-    location.href = "spaceStone.html";
+    $("#gauntletPage").hide();
+    $("#tsPage").show();
 }
 
 function powerPage() {
-    location.href = "powerStone.html";
+    $("#gauntletPage").hide();
+    $("#psPage").show();
 }
+
+function spacePage() {
+    $("#gauntletPage").hide();
+    $("#spsPage").show();
+}
+
+function realityPage() {
+    $("#gauntletPage").hide();
+    $("#rsPage").show();
+}
+
+function soulPage() {
+    $("#gauntletPage").hide();
+    $("#ssPage").show();
+}
+
+function mindPage() {
+    $("#gauntletPage").hide();
+    $("#msPage").show();
+}
+
+
+
