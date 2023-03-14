@@ -1,6 +1,6 @@
 
 $(document).ready(function(){ 
-    homepage();
+    introPage();
 });
 
 function homepage() {
@@ -11,6 +11,23 @@ function homepage() {
     $("#rsPage").hide();
     $("#ssPage").hide();
     $("#msPage").hide();
+    $("#introPage").hide();
+}
+
+function introPage() {
+    $("#introPage").hide();
+    $("#gauntletPage").hide();
+    $("#tsPage").hide();
+    $("#psPage").hide();
+    $("#spsPage").hide();
+    $("#rsPage").hide();
+    $("#ssPage").hide();
+    $("#msPage").hide();
+    $("#continue").hide();
+    
+    $("#introPage").delay( 1000 ).fadeIn("slow");
+    $("#continue").delay( 3000 ).fadeIn("slow");
+    
 }
 function timePage() {
     $("#gauntletPage").hide();

@@ -82,6 +82,10 @@ p {
     text-align: left;
 }
 
+.right-align {
+    text-align: right;
+}
+
 .text--bottom {
     position: bottom;
     padding-top: 50px;
@@ -138,6 +142,27 @@ p {
     text-align: center;
     padding-top: 25px;
 }
+
+#introPage {
+    padding-top: 20vh;
+}
+
+#continue {
+    padding-top: 30px;
+}
+
+.quote {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.italics {
+    font-size: 40px;
+    font-weight: lighter;
+    
+}
+
+
 
 /* Timelines */
 #tsTime{
