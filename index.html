@@ -1,6 +1,5 @@
 <!doctype html>
 <html>
-
 <head>
     <title>The Infinity Stones</title>
     <meta charset="UTF-8">
@@ -15,6 +14,9 @@
             <h1>
                 THE INFINITY STONES
             </h1>
+        </div>
+        <div id="snapbtn" onclick="snapPage()">
+          <h1>SNAP!</h1>
         </div>
         <div id="gauntlet" class="center">
             <svg xmlns="http://www.w3.org/2000/svg" width="493" height="734" fill="none" viewBox="0 0 493 734">
@@ -31,9 +33,6 @@
                 <path id="mindStone" class="grow" onclick="mindPage()" fill="#FAFF00" stroke="#1E1E1E" d="M215 177.561 246.5 149l31.5 28.561v48.963L246.5 258 215 226.524v-48.963Z"/>
                 <path id="timeStone" class="grow" onclick="timePage()" fill="#05FF00" stroke="#1E1E1E" d="m425 144.5 27-24.5 27 24.5v42l-27 27-27-27v-42Z"/>
             </svg>
-        </div>
-        <div id="snapbtn" onclick="snapPage()">
-            <h1>SNAP!</h1>
         </div>
     </div>
 
@@ -473,12 +472,179 @@
 
     <!-- SNAP PAGE -->
     <div id="snapPage">
-        <h1>THE BLIP</h1>
+        <h1 class="color--snap">THE SNAP</h1>
+        <div class="container">
+          <a onclick="homepage()"><i class="material-symbols-outlined">
+            arrow_back
+            </i>Back
+          </a>
+          <h2 class="color--snap">SUMMARY</h2>
+          <hr>
+          <p>At the end of Infinity War, Thanos had successfully collected all the infinity stones and in doing so, using all the powers of the infinity stones all at once, he was able to exterminate half of all life in the universe with the snap of his fingers.
+            On Earth, the majority of world governments were in a state of chaos because half of the world's population had disappeared. Over the course of five years, the victims of the Snap would come to be known as the Vanished, with memorial sites erected in their honor in every city in the world.
+          </p>
+
+          <div>
+            <h1 class="subheading color--snap">THE ROLES OF THE STONES</h1>
+            <div class="stats">
+              <div class="stats__block">
+
+                <div class="stats__stone-role__container">
+                  <div>
+                    <svg class="stone stone--role" xmlns="http://www.w3.org/2000/svg" width="54" height="93.5" fill="none" viewBox="0 0 139 239">
+                      <path fill="#FAFF00" stroke="#1E1E1E" d="M1 63.102 69.5 1 138 63.102V169.56L69.5 238 1 169.561V63.101Z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="color--mind">MIND STONE:</h2>
+                    <hr class="stats__desc__hr">
+                    <p>To Dicern Life</p>
+                  </div>
+                </div>
+
+                <div class="stats__stone-role__container">
+                  <div>
+                    <svg class="stone stone--role" xmlns="http://www.w3.org/2000/svg" width="54" height="93.5" fill="none" viewBox="0 0 139 239">
+                      <path fill="#FF9900" stroke="#1E1E1E" d="M1 63.102 69.5 1 138 63.102V169.56L69.5 238 1 169.561V63.101Z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="color--soul">SOUL STONE:</h2>
+                    <hr class="stats__desc__hr">
+                    <p>To Take Life</p>
+                  </div>
+                </div>
+
+                <div class="stats__stone-role__container">
+                  <div>
+                    <svg class="stone stone--role" xmlns="http://www.w3.org/2000/svg" width="54" height="93.5" fill="none" viewBox="0 0 139 239">
+                      <path fill="#FF0000" stroke="#1E1E1E" d="M1 63.102 69.5 1 138 63.102V169.56L69.5 238 1 169.561V63.101Z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="color--reality">REALITY STONE:</h2>
+                    <hr class="stats__desc__hr">
+                    <p>To Erase the Physical Body</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="stats__block">
+                <div class="stats__stone-role__container">
+                  <div>
+                    <svg class="stone stone--role" xmlns="http://www.w3.org/2000/svg" width="54" height="93.5" fill="none" viewBox="0 0 139 239">
+                      <path fill="#0094FF" stroke="#1E1E1E" d="M1 63.102 69.5 1 138 63.102V169.56L69.5 238 1 169.561V63.101Z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="color--space">SPACE STONE:</h2>
+                    <hr class="stats__desc__hr">
+                    <p>To Reach the Whole Universe</p>
+                  </div>
+                </div>
+
+                <div class="stats__stone-role__container">
+                  <div>
+                    <svg class="stone stone--role" xmlns="http://www.w3.org/2000/svg" width="54" height="93.5" fill="none" viewBox="0 0 139 239">
+                      <path fill="#BD00FF" stroke="#BD00FF" d="M1 63.102 69.5 1 138 63.102V169.56L69.5 238 1 169.561V63.101Z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="color--power">POWER STONE:</h2>
+                    <hr class="stats__desc__hr">
+                    <p>To Execute this Massive Task</p>
+                  </div>
+                </div>
+
+                <div class="stats__stone-role__container">
+                  <div>
+                    <svg class="stone stone--role" xmlns="http://www.w3.org/2000/svg" width="54" height="93.5" fill="none" viewBox="0 0 139 239">
+                      <path fill="#05FF00" stroke="#1E1E1E" d="M1 63.102 69.5 1 138 63.102V169.56L69.5 238 1 169.561V63.101Z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h2 class="color--time">TIME STONE:</h2>
+                    <hr class="stats__desc__hr">
+                    <p>To Take Life All at Once</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="center">
+            <h1 class="color--snap">THE AFTERMATH</h1>
+            <div class="stats__aftermathBody">
+              <h2 class="color--snap">CASUALTIES IN THE UNIVERSE</h2>
+              <hr class="stats__desc__hr--centered">
+              <span class="stats__bigNumber">
+                5 TRILLION
+              </span>
+            </div>
+
+            <div class="stats__aftermathBody">
+              <h2 class="color--snap">DECEASED HUMANS</h2>
+              <hr class="stats__desc__hr--centered">
+              <span class="stats__bigNumber">3,797,000,000</span>
+            </div>
+
+            <div class="stats__aftermathBody">
+              <h3 class="stats__medText">Only <span class="stats__bigNumber color--snap">57.5%</span> of the Human Population Survived.</h3>
+            </div>
+          </div>
+
+          <div>
+            <div class="stats after">
+              <div class="stats__block">
+                <h2 class="color--snap">HEROES SURVIVED:</h2>
+                <hr class="stats__desc__hr">
+                <p>THOR ODINSON<br>
+                  STEVE ROGERS (CAPTAIN AMERICA)<br>
+                  M’BAKU<br>
+                  OKOYE<br>
+                  ROCKET<br>
+                  JAMES RHODES (WAR MACHINE)<br>
+                  NEBULA<br>
+                  TONY STARK (IRON MAN)<br>
+                  BRUCE BANNER (HULK)<br>
+                  NATASHA ROMANOFF (BLACK WIDOW)<br>
+                  SCOTT LANG (ANT-MAN)<br>
+                  CAROL DENVERS (CAPATAIN MARVEL)<br>
+                  CLINT BARTON (HAWK EYE)</p>
+              </div>
+
+              <div class="stats__block">
+                <h2 class="color--snap">HEROES DECEASED:</h2>
+                <hr>
+                <p>BUCKY BARNES (THE WINTER SOLDIER)<br>
+                  T'CHALLA (BLACK PANTHER)<br>
+                  GROOT<br>
+                  WANDA MAXIMOFF<br>
+                  SAM WILSON (THE FALCON)<br>
+                  MANTIS<br>
+                  DRAX<br>
+                  PETER QUILL (STAR-LORD)<br>
+                  STEPHEN STRANGE (DOCTOR STRANGE)<br>
+                  PETER PARKER (SPIDER-MAN)<br>
+                  NICK FURY<br>
+                  MARIA HILL</p>
+              </div>
+            </div>
+
+            <div>
+              <h2 class="color--snap">THANOS AND THE STONES</h2>
+              <hr>
+              <p>In 2018, after Thanos had achieved his lifetime goal of killing half of all life in the universe, via the power of the Infinity Stones, he used the Space Stone to teleport himself to the Garden, where he settled at his farm, while smiling contentedly at the sunrise.
+                A few weeks after, Thanos used the stones to detroy themselves in order to avoid being tempted to use their power for personal gain, though this ended up wounding him badly and scarring him due to the gamma radiaation. It also damages the infinity gauntlet and resulted in the gauntlet being fused to his hand. A few days later, the remaining avengers gave him a visit in hopes of retrieving the stones to reverse the snap but it was already too late.
+                </p>
+            </div>
+          </div>
+        </div>
     </div>
     <!-- END OF SNAP PAGE -->
 
-    <div class="footer">
-    </div>
+    <footer class="footer color--footer">
+      <a href="sources.html"><tt>Sources</tt></a>
+    </footer>
 </body>
-
 </html>

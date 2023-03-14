@@ -30,6 +30,7 @@ function homepage() {
     $("#ssPage").hide();
     $("#msPage").hide();
     $("#introPage").hide();
+    $("#snapPage").hide();
     $("#snapbtn").hide();
 
     if (tsC == true && psC == true && spsC == true && rsC == true && ssC == true && msC == true) {

@@ -38,6 +38,7 @@ a i {
 p {
     font-weight: 200;
     font-size: 24px;
+    margin-top: 0;
 }
 
 /* colors */
@@ -64,6 +65,10 @@ p {
 
 .color--power {
     color: #BD00FF;
+}
+
+.color--snap {
+    color:aqua;
 }
 
 /* Components */
@@ -101,10 +106,39 @@ p {
     padding: 50px;
 }
 
+.subheading {
+    font-size: 38px;
+}
+
 .stone {
     margin-left: 50px;
     margin-right: 50px;
     margin-top: 50px;
+}
+
+.stone--role {
+    margin-left: 0px;
+    margin-right: 20px;
+    margin-top: 18px;
+}
+
+.stats__stone-role__container {
+    display: flex;
+}
+
+.stats__aftermathBody {
+    padding-bottom: 200px;
+}
+
+.footer {
+    /* Css  */
+   position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: #0F0022;
+   color: white;
+   text-align: center;
 }
 
 /* Stats */
@@ -120,6 +154,11 @@ p {
     margin-top: 0;
 }
 
+.stats__desc__hr--centered {
+    width: 400px;
+    text-align: center;
+}
+
 .stats__block {
     flex-grow: 1;
 }
@@ -132,6 +171,13 @@ p {
     font-size: 128px;
     font-weight: bold;
     margin-bottom: -20px;
+}
+
+.stats__medText {
+    font-size: 48px;
+    font-weight: bold;
+    margin: 0px;
+    margin-bottom: 50px;
 }
 
 .stats__desc {
