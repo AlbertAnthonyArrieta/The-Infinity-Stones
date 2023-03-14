@@ -7,17 +7,17 @@ var ssC = false;
 var msC = false;
 
 $(document).ready(function(){ 
-    //introPage();
-    $("#gauntletPage").hide();
-    $("#tsPage").hide();
-    $("#psPage").hide();
-    $("#spsPage").hide();
-    $("#rsPage").hide();
-    $("#ssPage").hide();
-    $("#msPage").hide();
-    $("#introPage").hide();
-    $("#snapbtn").hide();
-    snapPage();
+    introPage();
+    // $("#gauntletPage").hide();
+    // $("#tsPage").hide();
+    // $("#psPage").hide();
+    // $("#spsPage").hide();
+    // $("#rsPage").hide();
+    // $("#ssPage").hide();
+    // $("#msPage").hide();
+    // $("#introPage").hide();
+    // $("#snapbtn").hide();
+    // snapPage();
     
 });
 
