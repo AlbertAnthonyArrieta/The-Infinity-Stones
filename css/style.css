@@ -103,7 +103,7 @@ p {
 }
 
 .header {
-    padding: 50px;
+    padding: 25px;
 }
 
 .subheading {
@@ -127,7 +127,8 @@ p {
 }
 
 .stats__aftermathBody {
-    padding-bottom: 200px;
+    padding-bottom: 100px;
+    padding-top: 100px;
 }
 
 .gauntlet__glow {
@@ -212,8 +213,6 @@ p {
     
 }
 
-
-
 /* Timelines */
 #tsTime{
     content: url("../imgs/TimeStoneTimeline.svg");
@@ -266,10 +265,24 @@ p {
 }
 
 /* Animation */
-.grow { 
-transition: all .2s ease-in-out; 
-}
-    
-.grow:hover { 
-transform: scale(1.02); 
-}
+@keyframes colorchange {
+    0% {
+      fill: #05FF00;
+    }
+    16% {
+      fill: #0094FF;
+    }
+    32% {
+      fill: #FAFF00;
+    }
+    48% {
+      fill: #FF9900;
+    }
+    64% {
+      fill: #FF0000;
+    }
+    80% {
+      fill: #BD00FF;
+    }
+  }
+
