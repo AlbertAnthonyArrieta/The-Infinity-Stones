@@ -1,0 +1,49 @@
+#tsTime{
+    content: url("../imgs/TimeStoneTimeline.svg");
+}
+
+#spsTime{
+    content: url("../imgs/SpaceStoneTimeline.svg");
+}
+
+#psTime{
+    content: url("../imgs/PowerStoneTimeline.svg");
+}
+
+#rsTime{
+    content: url("../imgs/RealityStoneTimeline.svg");
+}
+
+#ssTime{
+    content: url("../imgs/SoulStoneTimeline.svg");
+}
+
+#msTime{
+    content: url("../imgs/MindStoneTimeline.svg");
+}
+
+@media screen and (max-width: 1260px) {
+    #tsTime{
+        content: url("../imgs/TimeStoneTimelineV.svg");
+    }
+
+    #spsTime{
+    content: url("../imgs/SpaceStoneTimelineV.svg");
+    }
+
+    #psTime{
+        content: url("../imgs/PowerStoneTimelineV.svg");
+    }
+
+    #rsTime{
+        content: url("../imgs/RealityStoneTimelineV.svg");
+    }
+
+    #ssTime{
+        content: url("../imgs/SoulStoneTimelineV.svg");
+    }
+
+    #msTime{
+        content: url("../imgs/MindStoneTimelineV.svg");
+    }
+}

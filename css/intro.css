@@ -1,0 +1,18 @@
+#introPage {
+    padding-top: 20vh;
+}
+
+#continue {
+    padding-top: 30px;
+}
+
+.quote {
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.italics {
+    font-size: 40px;
+    font-weight: lighter;
+    
+}

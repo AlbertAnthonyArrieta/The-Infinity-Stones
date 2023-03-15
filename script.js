@@ -148,8 +148,8 @@ function powerPage() {
     $(".gauntlet__glow").css("fill", "#BD00FF");
     setTimeout(function() {
         $("#gauntletPage").fadeOut();
-        $("#psPage").fadeIn(200);
-    }, 300);
+        $("#psPage").fadeIn(1000);
+    }, 1000);
     psC = true;
 }
 

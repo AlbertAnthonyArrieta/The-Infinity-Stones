@@ -1,4 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import 'colors.css';
+@import 'stats.css';
+@import 'timelines.css';
+@import 'animation.css';
+@import 'intro.css';
 
 * {
     box-sizing: border-box;
@@ -41,37 +46,7 @@ p {
     margin-top: 0;
 }
 
-/* colors */
-
-.color--time {
-    color: #05FF00;
-}
-
-.color--space {
-    color: #0094FF;
-}
-
-.color--mind {
-    color: #FAFF00;
-}
-
-.color--soul {
-    color: #FF9900;
-}
-
-.color--reality {
-    color: #FF0000;
-}
-
-.color--power {
-    color: #BD00FF;
-}
-
-.color--snap {
-    color:aqua;
-}
-
-/* Components */
+/* Layout */
 
 .container {
     max-width: 900px;  
@@ -79,15 +54,11 @@ p {
     margin-right: auto;
 }
 
-.center {
+.align--center {
     text-align: center;
 }
 
-.left-align {
-    text-align: left;
-}
-
-.right-align {
+.align--right {
     text-align: right;
 }
 
@@ -95,11 +66,6 @@ p {
     position: bottom;
     padding-top: 50px;
     padding-right: 30px;
-}
-
-.description {
-    padding-left: 200px;
-    padding-right: 200px;
 }
 
 .header {
@@ -122,15 +88,6 @@ p {
     margin-top: 18px;
 }
 
-.stats__stone-role__container {
-    display: flex;
-}
-
-.stats__aftermathBody {
-    padding-bottom: 100px;
-    padding-top: 100px;
-}
-
 .gauntlet__glow {
     fill: #FFD749;
 }
@@ -146,143 +103,9 @@ p {
    text-align: center;
 }
 
-/* Stats */
-
-.stats {
-    display: flex;
-}
-
-.stats__desc__hr{
-    width: 270px;
-    text-align: left;
-    margin-left: 0;
-    margin-top: 0;
-}
-
-.stats__desc__hr--centered {
-    width: 400px;
-    text-align: center;
-}
-
-.stats__block {
-    flex-grow: 1;
-}
-
-.stats__movies__title {
-    display: inline-flex;
-}
-
-.stats__bigNumber {
-    font-size: 128px;
-    font-weight: bold;
-    margin-bottom: -20px;
-}
-
-.stats__medText {
-    font-size: 48px;
-    font-weight: bold;
-    margin: 0px;
-    margin-bottom: 50px;
-}
-
-.stats__desc {
-    font-size: 20px;
-}
-
 .timeline {
     text-align: center;
     padding-top: 25px;
 }
 
-#introPage {
-    padding-top: 20vh;
-}
-
-#continue {
-    padding-top: 30px;
-}
-
-.quote {
-    font-size: 50px;
-    font-weight: 300;
-}
-
-.italics {
-    font-size: 40px;
-    font-weight: lighter;
-    
-}
-
-/* Timelines */
-#tsTime{
-    content: url("../imgs/TimeStoneTimeline.svg");
-}
-
-#spsTime{
-    content: url("../imgs/SpaceStoneTimeline.svg");
-}
-
-#psTime{
-    content: url("../imgs/PowerStoneTimeline.svg");
-}
-
-#rsTime{
-    content: url("../imgs/RealityStoneTimeline.svg");
-}
-
-#ssTime{
-    content: url("../imgs/SoulStoneTimeline.svg");
-}
-
-#msTime{
-    content: url("../imgs/MindStoneTimeline.svg");
-}
-
-@media screen and (max-width: 1260px) {
-    #tsTime{
-        content: url("../imgs/TimeStoneTimelineV.svg");
-    }
-
-    #spsTime{
-    content: url("../imgs/SpaceStoneTimelineV.svg");
-    }
-
-    #psTime{
-        content: url("../imgs/PowerStoneTimelineV.svg");
-    }
-
-    #rsTime{
-        content: url("../imgs/RealityStoneTimelineV.svg");
-    }
-
-    #ssTime{
-        content: url("../imgs/SoulStoneTimelineV.svg");
-    }
-
-    #msTime{
-        content: url("../imgs/MindStoneTimelineV.svg");
-    }
-}
-
-/* Animation */
-@keyframes colorchange {
-    0% {
-      fill: #05FF00;
-    }
-    16% {
-      fill: #0094FF;
-    }
-    32% {
-      fill: #FAFF00;
-    }
-    48% {
-      fill: #FF9900;
-    }
-    64% {
-      fill: #FF0000;
-    }
-    80% {
-      fill: #BD00FF;
-    }
-  }
 

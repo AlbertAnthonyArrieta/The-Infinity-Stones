@@ -1,0 +1,20 @@
+@keyframes colorchange {
+    0% {
+      fill: #05FF00;
+    }
+    16% {
+      fill: #0094FF;
+    }
+    32% {
+      fill: #FAFF00;
+    }
+    48% {
+      fill: #FF9900;
+    }
+    64% {
+      fill: #FF0000;
+    }
+    80% {
+      fill: #BD00FF;
+    }
+  }
