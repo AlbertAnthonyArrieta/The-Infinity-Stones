@@ -5,19 +5,7 @@
 @import 'animation.css';
 @import 'intro.css';
 
-* {
-    box-sizing: border-box;
-}
-
-body,
-html {
-    margin: 0;
-    min-height: 100vh;
-    font-family: 'Roboto', sans-serif;
-    background-color: #170035;
-    color: white;
-}
-
+/* Typography */
 h1 {
     text-align: center;
     font-size: 70px;
@@ -46,14 +34,6 @@ p {
     margin-top: 0;
 }
 
-/* Layout */
-
-.container {
-    max-width: 900px;  
-    margin-left: auto; 
-    margin-right: auto;
-}
-
 .align--center {
     text-align: center;
 }
@@ -62,18 +42,39 @@ p {
     text-align: right;
 }
 
-.text--bottom {
+.align--bottom {
     position: bottom;
     padding-top: 50px;
     padding-right: 30px;
 }
 
-.header {
-    padding: 25px;
-}
-
 .subheading {
     font-size: 38px;
+}
+
+/* Layout */
+
+* {
+    box-sizing: border-box;
+}
+
+body,
+html {
+    margin: 0;
+    min-height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    background-color: #170035;
+    color: white;
+}
+
+.container {
+    max-width: 900px;  
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.header {
+    padding: 25px;
 }
 
 .stone {
@@ -107,5 +108,6 @@ p {
     text-align: center;
     padding-top: 25px;
 }
+
 
 

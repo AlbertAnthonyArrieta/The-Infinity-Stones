@@ -1,20 +1,74 @@
+#snapbtn:hover {
+    animation: colorchange 1s, shake 0.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+}
+
+.stone--float {
+    animation: float 4s ease-in-out infinite;
+}
+
+
+.backbtn {
+    color: rgb(212, 212, 212);
+}
+
+.backbtn:hover {
+    color: white;
+}
+
 @keyframes colorchange {
     0% {
       fill: #05FF00;
+      color: #05FF00;
     }
     16% {
       fill: #0094FF;
+      color: #0094FF;
     }
     32% {
       fill: #FAFF00;
+      color: #FAFF00;
     }
     48% {
       fill: #FF9900;
+      color: #FF9900;
     }
     64% {
       fill: #FF0000;
+      color: #FF0000;
     }
     80% {
       fill: #BD00FF;
+      color: #BD00FF;
     }
   }
+
+  /* Taken from W3Schools: https://www.w3schools.com/howto/howto_css_shake_image.asp */
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  /* Taken from: https://codepen.io/MarioDesigns/pen/woJgeo */
+  @keyframes float {
+	0% {
+		transform: translatey(0px);
+	}
+	50% {
+		transform: translatey(-20px);
+	}
+	100% {
+		transform: translatey(0px);
+	}
+}

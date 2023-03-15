@@ -8,16 +8,6 @@ var msC = false;
 
 $(document).ready(function(){ 
     introPage();
-    // $("#gauntletPage").hide();
-    // $("#tsPage").hide();
-    // $("#psPage").hide();
-    // $("#spsPage").hide();
-    // $("#rsPage").hide();
-    // $("#ssPage").hide();
-    // $("#msPage").hide();
-    // $("#introPage").hide();
-    // $("#snapbtn").hide();
-    // snapPage();
 
     //Stones
     $("#TimeStone").hide();
@@ -30,42 +20,17 @@ $(document).ready(function(){
 });
 
 function homepage() {
-    $("#gauntletPage").fadeIn("slow");
+    $("#gauntletPage").delay(1000).fadeIn("slow");
     $("#tsPage").hide();
     $("#psPage").hide();
     $("#spsPage").hide();
     $("#rsPage").hide();
     $("#ssPage").hide();
     $("#msPage").hide();
-    $("#introPage").hide();
+    $("#introPage").fadeOut("slow");
     $("#snapPage").hide();
     $("#snapbtn").hide();
     $('.gauntlet__glow').css("fill", "#FFD749");
-    
-    //Stones
-    if (tsC == true) {
-        $("#TimeStone").show();
-    }
-
-    if (psC == true) {
-        $("#PowerStone").show();
-    }
-
-    if (spsC == true) {
-        $("#SpaceStone").show();
-    }
-
-    if (rsC == true) {
-        $("#RealityStone").show();
-    }
-
-    if (ssC == true) {
-        $("#SoulStone").show();
-    }
-
-    if (msC == true) {
-        $("#MindStone").show();
-    }
 
     //Hovers
     $("#tsSlot").hover(function() {
@@ -107,12 +72,20 @@ function homepage() {
     //Snap option
     if (tsC == true && psC == true && spsC == true && rsC == true && ssC == true && msC == true) {
         $("#snapbtn").fadeIn(3000);
+
         $(".gauntlet__glow").css({
             "animation": "colorchange 1s",
             "animation-timing-function": "ease-in-out",
             "animation-iteration-count": "infinite",
             "animation-play-state": "running",
         });
+    }
+
+    //Helper
+    if (tsC == false && psC == false && spsC == false && rsC == false && ssC == false && msC == false) {
+        $("#helper").fadeIn(3000);
+    } else {
+        $("#helper").hide();
     }
 }
 
@@ -128,17 +101,23 @@ function introPage() {
     $("#snapPage").hide();
     $("#continue").hide();
     
-    $("#introPage").delay( 1000 ).fadeIn("slow");
-    $("#continue").delay( 3000 ).fadeIn("slow");
-    
+    $("#introPage").fadeIn(3000);
+    $("#continue").delay( 4000 ).fadeIn("slow");
+
+    $("#continue").click(function() {
+        $("#introPage").fadeOut(2000);
+        setTimeout(function() {
+            homepage();
+        }, 3000);
+    });
 }
 function timePage() {
     $("#TimeStone").fadeIn();
     $(".gauntlet__glow").css("fill", "#05FF00");
     setTimeout(function() {
         $("#gauntletPage").fadeOut();
-        $("#tsPage").fadeIn(1000);
-    }, 1000);
+        $("#tsPage").fadeIn(2000);
+    }, 500);
     tsC = true;
 }
 
@@ -148,8 +127,8 @@ function powerPage() {
     $(".gauntlet__glow").css("fill", "#BD00FF");
     setTimeout(function() {
         $("#gauntletPage").fadeOut();
-        $("#psPage").fadeIn(1000);
-    }, 1000);
+        $("#psPage").fadeIn(2000);
+    }, 500);
     psC = true;
 }
 
@@ -158,8 +137,8 @@ function spacePage() {
     $(".gauntlet__glow").css("fill", "#0094FF");
     setTimeout(function() {
     $("#gauntletPage").fadeOut();
-    $("#spsPage").fadeIn(1000);
-    }, 1000);
+    $("#spsPage").fadeIn(2000);
+    }, 500);
     spsC = true;
 }
 
@@ -168,8 +147,8 @@ function realityPage() {
     $(".gauntlet__glow").css("fill", "#FF0000");
     setTimeout(function() {
     $("#gauntletPage").fadeOut();
-    $("#rsPage").fadeIn(1000);
-    }, 1000);
+    $("#rsPage").fadeIn(2000);
+    }, 500);
     rsC = true;
 }
 
@@ -178,8 +157,8 @@ function soulPage() {
     $(".gauntlet__glow").css("fill", "#FF9900");
     setTimeout(function() {
     $("#gauntletPage").fadeOut();
-    $("#ssPage").fadeIn(1000);
-    }, 1000);
+    $("#ssPage").fadeIn(2000);
+    }, 500);
     ssC = true;
 }
 
@@ -188,15 +167,25 @@ function mindPage() {
     $(".gauntlet__glow").css("fill", "#FAFF00");
     setTimeout(function() {
     $("#gauntletPage").fadeOut();
-    $("#msPage").fadeIn(1000);
-    }, 1000);
+    $("#msPage").fadeIn(2000);
+    }, 500);
     msC = true;
 }
 
 function snapPage() {
     $("#gauntlet").effect("shake");
+    $("body").animate({
+        backgroundColor: "#fff"
+    });
     setTimeout(function() {
         $("#gauntletPage").fadeOut();
-        $("#snapPage").fadeIn();
+        $("#snapPage").fadeIn(5000);
     }, 1000);
+
+    setTimeout(function() {
+        $("body").animate({
+            backgroundColor: "#170035"
+        });
+    }, 1000);
+
 }
