@@ -130,8 +130,12 @@ p {
     padding-bottom: 200px;
 }
 
+.gauntlet__glow {
+    fill: #FFD749;
+}
+
 .footer {
-    /* Css  */
+    /* Css from w3schools  */
    position: fixed;
    left: 0;
    bottom: 0;

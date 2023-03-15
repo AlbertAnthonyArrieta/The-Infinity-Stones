@@ -18,6 +18,14 @@ $(document).ready(function(){
     // $("#introPage").hide();
     // $("#snapbtn").hide();
     // snapPage();
+
+    //Stones
+    $("#TimeStone").hide();
+    $("#PowerStone").hide();
+    $("#SpaceStone").hide();
+    $("#RealityStone").hide();
+    $("#SoulStone").hide();
+    $("#MindStone").hide();
     
 });
 
@@ -32,6 +40,32 @@ function homepage() {
     $("#introPage").hide();
     $("#snapPage").hide();
     $("#snapbtn").hide();
+
+    
+
+    if (tsC == true) {
+        $("#TimeStone").show();
+    }
+
+    if (psC == true) {
+        $("#PowerStone").show();
+    }
+
+    if (spsC == true) {
+        $("#SpaceStone").show();
+    }
+
+    if (rsC == true) {
+        $("#RealityStone").show();
+    }
+
+    if (ssC == true) {
+        $("#SoulStone").show();
+    }
+
+    if (msC == true) {
+        $("#MindStone").show();
+    }
 
     if (tsC == true && psC == true && spsC == true && rsC == true && ssC == true && msC == true) {
         $("#snapbtn").fadeIn(3000);
